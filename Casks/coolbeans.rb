@@ -1,6 +1,6 @@
 cask 'coolbeans' do
-  version '2018.12'
-  sha256 '68df6bc7ff63598664e3526492aaf0489ba6a0b0ccf7ac99f726763dd6d1f564'
+  version '2018.12.1'
+  sha256 'ad707c31e3b225de8d67cb961155d998f53b27cbbe4a44d5743997d8bd14c0d5'
 
   url "https://paris.download.coolbeans.xyz/download/CoolBeans-#{version}.dmg"
   appcast 'https://coolbeans.xyz/download-macos.html'
