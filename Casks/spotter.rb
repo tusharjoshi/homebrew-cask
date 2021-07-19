@@ -1,6 +1,6 @@
 cask "spotter" do
-  version "1.0.2"
-  sha256 "2658fb7343961d6f54c9aa7855c12a3e9aee2b109a1794572632a3e94964d10a"
+  version "1.0.7"
+  sha256 "7c435738deb9317de300139f41f04916f76a6d67fbef3f6b21fce3c6ccb49d74"
 
   url "https://github.com/spotter-application/spotter/releases/download/#{version}/spotter.dmg"
   name "Spotter"

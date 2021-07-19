@@ -1,9 +1,10 @@
 cask "second-life-viewer" do
-  version "6.4.17.557391"
-  sha256 "398fbd895eb18de4eb22140ee240de8a2e4d1d1ac4c84efd997a1962c38fce4e"
+  version "6.4.19.560171"
+  sha256 "dca90cf9782db8a1f8644f65fc9725b4cfee418d13c12d6a6fc3a7ab4070ec2d"
 
   url "http://download.cloud.secondlife.com/Viewer_#{version.major}/Second_Life_#{version.dots_to_underscores}_x86_64.dmg"
   name "Linden Lab Second Life Viewer"
+  desc "3D browsing software for Second Life online virtual world"
   homepage "https://secondlife.com/"
 
   livecheck do

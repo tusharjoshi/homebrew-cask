@@ -1,6 +1,6 @@
 cask "carbon-copy-cloner" do
-  version "5.1.25.6155"
-  sha256 "7d32533b6da7b9f9cbae45c21280157c86ceaa4539609d74a0a02f8bc3221fdd"
+  version "6.0.2.7152"
+  sha256 "bb964f34bef88f93f7aafe0ca45f57aad7618de104fda836384c626c283f3ed6"
 
   url "https://bombich.scdn1.secure.raxcdn.com/software/files/ccc-#{version}.zip",
       verified: "bombich.scdn1.secure.raxcdn.com/software/files/"
@@ -14,6 +14,7 @@ cask "carbon-copy-cloner" do
   end
 
   auto_updates true
+  depends_on macos: ">= :catalina"
 
   app "Carbon Copy Cloner.app"
 

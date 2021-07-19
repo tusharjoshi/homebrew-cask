@@ -1,6 +1,6 @@
 cask "lunar-client" do
-  version "2.6.0"
-  sha256 "e77fbfe8fef90eb09c875a2dc1c2535901e3d6ef6328e860629d63c721027da9"
+  version "2.7.3"
+  sha256 "742166a674edd555e54eb11c52e6fc517328d09c0fe326114fb855450a4245f6"
 
   url "https://launcherupdates.lunarclientcdn.com/Lunar%20Client%20v#{version}.dmg",
       verified: "launcherupdates.lunarclientcdn.com/"
@@ -12,6 +12,8 @@ cask "lunar-client" do
     url "https://launcherupdates.lunarclientcdn.com/latest-mac.yml"
     strategy :electron_builder
   end
+
+  depends_on macos: ">= :el_capitan"
 
   app "Lunar Client.app"
 

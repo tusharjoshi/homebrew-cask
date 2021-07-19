@@ -1,6 +1,6 @@
 cask "grandtotal" do
-  version "7.0.5"
-  sha256 "3d4f5a80afcc2d7f292c435ddb7a9683eb1440edd3595d7017a1a00d31ccba81"
+  version "7.1.1"
+  sha256 "68392637e9b6643d2aba18e2c15f8ea2f640c07c06aaa636ec27e65186b163d0"
 
   url "https://mediaatelier.com/GrandTotal#{version.major}/GrandTotal_#{version}.zip"
   name "GrandTotal"
@@ -11,6 +11,8 @@ cask "grandtotal" do
     url "https://mediaatelier.com/GrandTotal#{version.major}/feed.php"
     strategy :sparkle
   end
+
+  depends_on macos: ">= :high_sierra"
 
   app "GrandTotal.app"
 end

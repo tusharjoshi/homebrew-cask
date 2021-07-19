@@ -1,6 +1,6 @@
 cask "opera-gx" do
-  version "73.0.3856.434"
-  sha256 "09750f661112dd21392665059e8e43f75897eedb41589dfbe83bc693f9691601"
+  version "75.0.3969.279"
+  sha256 "337e8d5f8e6089e73914968961003495377478d6b0ce2470978419a8dce0da10"
 
   url "https://get.geo.opera.com/pub/opera_gx/#{version}/mac/Opera_GX_#{version}_Setup.dmg"
   name "Opera GX"
@@ -9,8 +9,7 @@ cask "opera-gx" do
 
   livecheck do
     url "https://ftp.opera.com/pub/opera_gx/"
-    strategy :page_match
-    regex(/href=['"]?(\d+(?:\.\d+)*)['"]?/i)
+    regex(%r{href=["']?v?(\d+(?:\.\d+)+)/?["' >]}i)
   end
 
   auto_updates true

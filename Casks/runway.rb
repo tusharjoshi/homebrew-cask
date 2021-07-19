@@ -1,10 +1,11 @@
 cask "runway" do
-  version "0.17.6"
-  sha256 "02596e42ca7db9481bb9d48fb0be22652329cc41b789b097778f430f8cf5f79a"
+  version "0.17.10"
+  sha256 "78bcccde07ac41618ea5330ee3cbbe905bee3bebfaa6dad2a5dff794996701c8"
 
   url "https://runway-releases.s3.amazonaws.com/Runway-#{version}.dmg",
       verified: "runway-releases.s3.amazonaws.com/"
   name "Runway"
+  desc "Creative toolkit powered by machine learning"
   homepage "https://runwayml.com/"
 
   livecheck do

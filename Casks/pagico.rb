@@ -1,9 +1,10 @@
 cask "pagico" do
-  version "9.10,20210401"
-  sha256 "62c191f301a628904fc5c016ea9a2b00b04e22a9f1b3c25f06661d82f0d37751"
+  version "9.10,20210518"
+  sha256 "df3a7a150381d66b5c5eb5ebe7bac2ea1c230fcfe0cfa2c87457d1b92e7e2f12"
 
   url "https://www.pagico.com/downloads/Pagico_macOS_r#{version.after_comma}.dmg"
   name "Pagico"
+  desc "Manage all your tasks, files, and notes"
   homepage "https://www.pagico.com/"
 
   livecheck do

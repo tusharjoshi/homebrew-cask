@@ -1,6 +1,6 @@
 cask "foobar2000" do
-  version "2.2.16"
-  sha256 "7e8a18395c96ce0337ffc36592d06f63e6817b15cb95c4de0255b3b6054aa8a4"
+  version "2.2.25"
+  sha256 "cf611faf9ef65665303bcf4ec5691d0d9f88b4ab675d93a6118c1f50561e492c"
 
   url "https://www.foobar2000.org/files/foobar2000-v#{version}.dmg"
   name "foobar2000"
@@ -9,9 +9,10 @@ cask "foobar2000" do
 
   livecheck do
     url :homepage
-    strategy :page_match
-    regex(%r{href=.*?/foobar2000-v(\d+(?:\.\d+)*)\.dmg}i)
+    regex(%r{href=.*?/foobar2000[._-]v?(\d+(?:\.\d+)+)\.dmg}i)
   end
+
+  depends_on macos: ">= :el_capitan"
 
   app "foobar2000.app"
 
